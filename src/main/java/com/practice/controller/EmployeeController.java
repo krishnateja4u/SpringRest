@@ -23,7 +23,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeservice;
 	
-	//This is for saving the employees
+	//This is for saving the employees 
 
 	@PostMapping("/save")
 	public void saveEmployees(@RequestBody EmployeeDto employeedto) {
@@ -32,6 +32,7 @@ public class EmployeeController {
 
 	}
 
+	//This is for fetching employees
 	@GetMapping("/fetchEmpdetails")
 
 	public List<EmployeeDto> fetchEmployeeDetails() {
